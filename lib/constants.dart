@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 
 // Colors
 const Color kPrimaryColor = Color(0xffC0392B);
+const Color pink = Color(0xFFD77FA1);
+const Color purple = Color(0xFFBAABDA);
+const Color lightBlue = Color(0xFFD6E5FA);
 
 // Social Media
 const kSocialIcons = [

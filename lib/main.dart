@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:kally_doo/main_page.dart';
-import 'package:kally_doo/theme_provider.dart';
-import 'package:kally_doo/theme_style.dart';
+import 'package:kally_doo/pages/main_page.dart';
+import 'package:kally_doo/theme/theme_provider.dart';
+import 'package:kally_doo/theme/theme_style.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,11 +12,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ThemeProvider _themeProvider = ThemeProvider();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Kally Doo',
-      theme: ThemeStyles.themeData(_themeProvider.lightTheme, context),
+      theme: ThemeStyles.themeData,
       initialRoute: '/',
       routes: {
         '/': (context) => const MainPage(),
