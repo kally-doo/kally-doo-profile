@@ -18,30 +18,34 @@ class MainPage extends StatelessWidget {
           style: TextStyle(fontFamily: 'Agustina', fontSize: 30),
         ),
       ),
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
           children: [
-            TyperAnimatedTextKit(
-              isRepeatingAnimation: true,
-              speed: const Duration(milliseconds: 50),
-              textStyle: GoogleFonts.montserrat(
-                fontSize: 30,
-                fontWeight: FontWeight.w200,
-                color: pink,
+            SizedBox(
+              height: 200,
+              child: TyperAnimatedTextKit(
+                isRepeatingAnimation: true,
+                speed: const Duration(milliseconds: 50),
+                textAlign: TextAlign.center,
+                textStyle: GoogleFonts.montserrat(
+                  fontSize: 30,
+                  fontWeight: FontWeight.w200,
+                  color: pink,
+                ),
+                text: const [
+                  'Khánh Linh xin chào tất cả mọi người nhá!',
+                  'Mọi người đi qua cho mình xin một like và folow nhé!',
+                  'Cảm ơn tất cả mọi người đã ủng hộ mình trong thời gian qua!',
+                  'Yêu mọi người \u{1f60d}'
+                ],
               ),
-              text: const [
-                'Khánh Linh xin chào tất cả mọi người nhá!',
-                'Mọi người đi qua cho mình xin một like và folow nhé!',
-                'Cảm ơn tất cả mọi người đã ủng hộ mình trong thời gian qua!',
-                'Yêu mọi người \u{1f60d}'
-              ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset('assets/images/banh_cool_flip.png'),
+                // Image.asset('assets/images/banh_cool_flip.png'),
                 const ContentWidget(),
-                Image.asset('assets/images/banh_cool_part_2.png'),
+                // Image.asset('assets/images/banh_cool_part_2.png'),
               ],
             ),
           ],
