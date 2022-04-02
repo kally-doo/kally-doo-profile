@@ -11,7 +11,14 @@ class ThemeStyles {
       ),
     ),
     scaffoldBackgroundColor: lightBlue,
-    primarySwatch: Colors.red,
+    buttonTheme: const ButtonThemeData(
+      buttonColor: purple
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ButtonStyle(
+        backgroundColor: MaterialStateProperty.all(purple)
+      )
+    ),
     primaryColorDark: kPrimaryColor,
     primaryColor: kPrimaryColor,
     highlightColor: kPrimaryColor,

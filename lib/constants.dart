@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 // Colors
-const Color kPrimaryColor = Color(0xffC0392B);
+const Color kPrimaryColor = Color(0xFFBAABDA);
 const Color pink = Color(0xFFD77FA1);
 const Color purple = Color(0xFFBAABDA);
 const Color lightBlue = Color(0xFFD6E5FA);
@@ -26,8 +27,8 @@ const kSocialLinks = [
 ];
 
 // URL Launcher
-// void launchURL(String _url) async =>
-//     await canLaunch(_url) ? await launch(_url) : throw 'Could not launch $_url';
+void launchURL(String _url) async =>
+    await canLaunch(_url) ? await launch(_url) : throw 'Could not launch $_url';
 
 // Community
 final kCommunityLogo = [
