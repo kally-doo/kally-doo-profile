@@ -42,11 +42,14 @@ class MainPage extends StatelessWidget {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+              children: const [
                 // Image.asset('assets/images/banh_cool_flip.png'),
-                const ContentWidget(),
+                ContentWidget(),
                 // Image.asset('assets/images/banh_cool_part_2.png'),
               ],
+            ),
+            const SizedBox(
+              height: 100,
             ),
           ],
         ),
